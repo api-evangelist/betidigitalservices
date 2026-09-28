@@ -1,23 +1,75 @@
 aid: betidigitalservices
+
 name: Betidigitalservices
-description: 'Betidigitalservices is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://betadigital.in/wp-content/uploads/2026/03/cropped-beta_logo_4__1_-removebg-preview.png
+
+description: Beta Digital Services is a technology and digital marketing firm based in India, offering a wide range of services including marketplace
+  management, e‑commerce marketing, social media advertising, web development, and AI‑powered digital solutions. Founded in 2018, the company
+  serves brands across major Indian marketplaces such as Amazon, Flipkart, and Myntra, helping them grow through product onboarding, catalog management,
+  advertising, and analytics. The team combines strategy, creativity, and technology to deliver scalable solutions for businesses seeking to expand
+  their online presence.
+
 url: https://raw.githubusercontent.com/api-evangelist/betidigitalservices/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Digital Marketing
+- E-commerce
+- Marketplace Services
+- Web Development
+- AI Solutions
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/betidigitalservices-llms.txt
+- type: Hosts
+  url: hosts/betidigitalservices-hosts.yml
+- type: SignUp
+  url: https://betadigital.in/partners/registered-partner-of-amazon/
+- type: PrivacyPolicy
+  url: https://betadigital.in/privacy-policy/
+- type: DomainSecurity
+  url: security/betidigitalservices-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/betidigitalservices
+  url: https://betadigital.in
+
+apis:
+- name: Betidigitalservices API
+  description: API endpoints for Betidigitalservices platform
+  humanURL: https://betadigital.in
+  aid: betidigitalservices:betidigitalservices-api
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: OpenAPI JSON not found at https://api.betadigital.in/openapi.json (404)
+  evidence:
+  - url: https://api.betadigital.in/openapi.json
+    status: 404
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
